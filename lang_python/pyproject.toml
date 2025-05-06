@@ -1,0 +1,63 @@
+# Project metadata and configuration
+[project]
+
+# Name of the Python package
+name = "algorithm"
+
+# Current version of the package
+version = "0.1.0"
+
+# Brief description of what the package does
+description = "Practicing Algorithms and DSA"
+
+# List of package authors with their contact information
+authors = [
+    {name = "Glauter Lemos",email = "glautervl@gmail.com"}
+]
+
+# Path to the project's README file
+readme = "README.md"
+
+# Minimum Python version required to run this package
+requires-python = ">=3.12"
+
+# List of external dependencies required by the package
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+# Setuptools configuration for package structure
+[tool.setuptools]
+
+# Maps the root package to the 'src' directory (src layout)
+package-dir = {"" = "src"}
+
+# Build system configuration
+[build-system]
+
+# Dependencies required to build the package
+requires = ["setuptools>=42", "wheel"]
+
+# The build backend to use for building the package
+build-backend = "setuptools.build_meta"
+
+# Flake8 linter configuration
+[tool.flake8]
+
+# Maximum line length allowed by the linter
+max-line-length = 88
+
+# Additional error codes to ignore during linting
+extend-ignore = ["E203"]
+
+# Black code formatter configuration
+[tool.black]
+
+# Maximum line length for code formatting
+line-length = 88
+
+# isort import sorter configuration
+[tool.isort]
+
+# Use Black-compatible import sorting settings
+profile = "black"
