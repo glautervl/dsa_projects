@@ -6,7 +6,7 @@ import dev.dsa.bigo.BigOExamples;
  * Hello world!
  *
  */
-public class RunApp 
+public class RunDSA 
 {
     public static void main( String[] args )
     {

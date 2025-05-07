@@ -9,7 +9,7 @@ if [ -d ".venv" ]; then
 fi
 
 # Run the algorithm package with correct Python path
-PYTHONPATH=src python -m dsa
+PYTHONPATH=src python3 -m dsa
 
 # Deactivate virtual environment if it was activated
 if [ -n "$VIRTUAL_ENV" ]; then
