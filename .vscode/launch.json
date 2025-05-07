@@ -6,13 +6,13 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Java Program",
+            "name": "Java DSA Program",
             "request": "launch",
             "mainClass": "dev.dsa.RunDSA",
             "projectName": "dsa"
         },
         {
-            "name": "Python: DSA Module",
+            "name": "Python DSA Module",
             "type": "debugpy",
             "request": "launch",
             "module": "dsa",
@@ -22,6 +22,16 @@
             "env": {
                 "PYTHONPATH": "${workspaceFolder}/python_dsa/src"
             }
+        },
+        {
+            "name": "Go DSA Program",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go_dsa/cmd/dsa",
+            "cwd": "${workspaceFolder}/go_dsa",
+            "env": {},
+            "args": []
         }
     ]
 }
