@@ -14,15 +14,15 @@ public class BigOExamples {
         String testStr = "abc";
         int[] unsortedArr = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
         int target = 5;
-        System.out.println("O(1) - Constant Time: " + constantTimeExample(testArr));
-        System.out.println("O(log N) - Logarithmic Time: " + binarySearch(testArr, target));
-        System.out.println("O(N) - Linear Time: " + linearSum(testArr));
-        System.out.println("O(N log N) - Log Linear Time: " + Arrays.toString(mergeSort(unsortedArr)));
-        System.out.println("O(N^2) - Quadratic Time: " + sumCharCodesN2(testStr));
-        System.out.println("O(N^3) - Cubic Time: " + sumCharCodesN3(testStr)); 
-        System.out.println("O(2^N) - Exponential Time: " + findFibonacciNumber(fibonacciNumber));
-        System.out.println("O(N!) - Factorial Time: " + getNumberOfPermutations(numberOfPermutations));
-        System.out.println("O(N!) - Factorial Time: " + Arrays.deepToString(generatePermutations(permutations)));
+        System.out.println("Java - O(1) - Constant Time: " + constantTimeExample(testArr));
+        System.out.println("Java - O(log N) - Logarithmic Time: " + binarySearch(testArr, target));
+        System.out.println("Java - O(N) - Linear Time: " + linearSum(testArr));
+        System.out.println("Java - O(N log N) - Log Linear Time: " + Arrays.toString(mergeSort(unsortedArr)));
+        System.out.println("Java - O(N^2) - Quadratic Time: " + sumCharCodesN2(testStr));
+        System.out.println("Java - O(N^3) - Cubic Time: " + sumCharCodesN3(testStr)); 
+        System.out.println("Java - O(2^N) - Exponential Time: " + findFibonacciNumber(fibonacciNumber));
+        System.out.println("Java - O(N!) - Factorial Time: " + getNumberOfPermutations(numberOfPermutations));
+        System.out.println("Java - O(N!) - Factorial Time: " + Arrays.deepToString(generatePermutations(permutations)));
     }
 
     // O(1) - Constant Time: The operation always takes the same amount of time, regardless of input size.
