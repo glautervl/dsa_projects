@@ -1,53 +1,51 @@
-# Python DSA (Data Structures and Algorithms)
+# JavaScript DSA (Data Structures and Algorithms)
 
-This project is a Python implementation of various data structures and algorithms, focusing on demonstrating different time complexities (Big O notation) and Python's unique features.
+This project is a JavaScript implementation of various data structures and algorithms, focusing on demonstrating different time complexities (Big O notation) and modern JavaScript features.
 
 ## Project Structure
 
 ```
-python_dsa/
+javascript_dsa/
 ├── src/                    # Source code
-│   ├── __init__.py        # Package initialization
-│   ├── main.py            # Main application entry point
+│   ├── index.js           # Main entry point
 │   └── bigo/              # Big O complexity examples
 ├── tests/                 # Test files
-├── requirements.txt       # Project dependencies
-├── setup.py              # Package setup file
+├── dist/                  # Compiled files
+├── package.json           # Project configuration
+├── .eslintrc.js          # ESLint configuration
 └── README.md             # This file
 ```
 
 ## Prerequisites
 
-- Python 3.9 or later
-- pip (Python package manager)
+- Node.js 18 or later
+- npm or yarn package manager
 
 ## Installation
 
-1. Create a virtual environment (recommended):
-
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
+# Install dependencies
+npm install
+# or
+yarn install
 ```
 
 ## Building and Running
 
-1. Install the package in development mode:
+1. Build the project:
 
 ```bash
-pip install -e .
+npm run build
+# or
+yarn build
 ```
 
 2. Run the application:
 
 ```bash
-python src/main.py
+npm start
+# or
+yarn start
 ```
 
 ## Running Tests
@@ -55,13 +53,17 @@ python src/main.py
 Run all tests:
 
 ```bash
-pytest
+npm test
+# or
+yarn test
 ```
 
 Run tests with coverage:
 
 ```bash
-pytest --cov=src tests/
+npm run test:coverage
+# or
+yarn test:coverage
 ```
 
 ## Big O Examples
@@ -77,28 +79,31 @@ The project includes examples of different time complexities:
 - O(2^N) - Exponential Time
 - O(N!) - Factorial Time
 
-Each example is implemented with detailed comments explaining the time complexity and implementation details, with special attention to Python's built-in data structures and standard library features.
+Each example is implemented with detailed comments explaining the time complexity and implementation details, with special attention to JavaScript's built-in data structures and modern language features.
 
 ## Project Organization
 
 - `src/`: Contains all source code
-  - `main.py`: Application entry point
+  - `index.js`: Application entry point
   - `bigo/`: Implementation of various time complexity examples
-  - `__init__.py`: Package initialization
 
 - `tests/`: Test files
   - Unit tests
   - Integration tests
   - Performance tests
 
+- `dist/`: Compiled files
+  - Generated from source
+  - Ready for distribution
+
 ## Development
 
 The project uses several development tools:
 
-- pytest for testing
-- black for code formatting
-- flake8 for linting
-- mypy for type checking
+- ESLint for code linting
+- Prettier for code formatting
+- Jest for testing
+- Babel for transpilation
 
 ## Contributing
 
