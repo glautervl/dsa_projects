@@ -1,9 +1,9 @@
-import runLinearSearch from "./linearSearch";
+import runLinearSearchExamples from "./linearSearchExamples";
 
 
 function runArrays() {
     // Run Linear Search
-    runLinearSearch();
+    runLinearSearchExamples();
 }
 
 export default runArrays;

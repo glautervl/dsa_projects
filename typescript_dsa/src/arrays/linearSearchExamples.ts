@@ -52,7 +52,7 @@ const twoCrystalBalls = (breaks: boolean[]) => {
     return -1;
 }
 
-const runLinearSearch = (): void => {
+const runLinearSearchExamples = (): void => {
     
     const arr = [1, 2, 3, 4, 5];
     const target = 3;
@@ -65,4 +65,4 @@ const runLinearSearch = (): void => {
     console.log("TypeScript - Arrays - O(logN) - Log Linear Time - Two Crystal Balls:", twoCrystalBalls(floors));
 }
 
-export default runLinearSearch;
+export default runLinearSearchExamples;
