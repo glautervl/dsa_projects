@@ -35,7 +35,7 @@ mvn clean install
 2. Run the application:
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.dsa.Main"
+mvn exec:java -Dexec.mainClass="dev.dsa.RunDSA"
 ```
 
 ## Running Tests
