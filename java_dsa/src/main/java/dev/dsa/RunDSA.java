@@ -1,5 +1,6 @@
 package dev.dsa;
 
+import dev.dsa.arrays.LinearSearchExamples;
 import dev.dsa.bigo.BigOExamples;
 
 /**
@@ -12,5 +13,7 @@ public class RunDSA
     {
         // Big O Examples
         new BigOExamples().runBigO();
+        // Linear Search Examples
+        new LinearSearchExamples().runLinearSearchExamples();
     }
 }

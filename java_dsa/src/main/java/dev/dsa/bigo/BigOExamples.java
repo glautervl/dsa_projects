@@ -14,19 +14,19 @@ public class BigOExamples {
         String testStr = "abc";
         int[] unsortedArr = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
         int target = 5;
-        System.out.println("Java - O(1) - Constant Time: " + constantTimeExample(testArr));
-        System.out.println("Java - O(log N) - Logarithmic Time: " + binarySearch(testArr, target));
-        System.out.println("Java - O(N) - Linear Time: " + linearSum(testArr));
-        System.out.println("Java - O(N log N) - Log Linear Time: " + Arrays.toString(mergeSort(unsortedArr)));
-        System.out.println("Java - O(N^2) - Quadratic Time: " + sumCharCodesN2(testStr));
-        System.out.println("Java - O(N^3) - Cubic Time: " + sumCharCodesN3(testStr)); 
-        System.out.println("Java - O(2^N) - Exponential Time: " + findFibonacciNumber(fibonacciNumber));
-        System.out.println("Java - O(N!) - Factorial Time: " + getNumberOfPermutations(numberOfPermutations));
-        System.out.println("Java - O(N!) - Factorial Time: " + Arrays.deepToString(generatePermutations(permutations)));
+        System.out.println("Java - BigO - O(1) - Constant Time - Constant Operation: " + constantOperation(testArr));
+        System.out.println("Java - BigO - O(log N) - Logarithmic Time - Binary Search: " + binarySearch(testArr, target));
+        System.out.println("Java - BigO - O(N) - Linear Time - Linear Search: " + linearSum(testArr));
+        System.out.println("Java - BigO - O(N log N) - Log Linear Time - Merge Sort: " + Arrays.toString(mergeSort(unsortedArr)));
+        System.out.println("Java - BigO - O(N^2) - Quadratic Time - Sum Char Codes N^2: " + sumCharCodesN2(testStr));
+        System.out.println("Java - BigO - O(N^3) - Cubic Time - Sum Char Codes N^3: " + sumCharCodesN3(testStr)); 
+        System.out.println("Java - BigO - O(2^N) - Exponential Time - Fibonacci Number: " + findFibonacciNumber(fibonacciNumber));
+        System.out.println("Java - BigO - O(N!) - Factorial Time - Number of Permutations: " + getNumberOfPermutations(numberOfPermutations));
+        System.out.println("Java - BigO - O(N!) - Factorial Time - Permutations: " + Arrays.deepToString(generatePermutations(permutations)));
     }
 
     // O(1) - Constant Time: The operation always takes the same amount of time, regardless of input size.
-    private Integer constantTimeExample(int[] n) {
+    private Integer constantOperation(int[] n) {
         return n[0];
     }
 
