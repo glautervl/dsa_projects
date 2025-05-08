@@ -1,0 +1,28 @@
+
+interface IResultDTO {
+    name: string;
+    timeComplexity: string;
+    spaceComplexity: string;
+    operations: number;
+    dataResult:any;
+}
+
+class ResultDTO implements IResultDTO {
+    name: string;
+    inputs: any;
+    timeComplexity: string;
+    spaceComplexity: string;
+    operations: number;
+    dataResult:any;
+
+    toString(): string {
+        return `${this.name} - Input Length: ${this.inputs}\n`+
+            `Time Complexity: ${this.timeComplexity}, Space Complexity: ${this.spaceComplexity}, Operations: ${this.operations}, Result: ${this.dataResult}\n`;
+     } 
+
+     printResult(): void {
+        console.log(this.toString());
+     }
+}
+
+export default ResultDTO;

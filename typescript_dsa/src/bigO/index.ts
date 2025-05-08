@@ -1,4 +1,4 @@
-import runBigOExamples from "./big_o_examples";
+import runBigOExamples from "./bigOExamples";
 
 // Run Big O Examples
 function runBigO() {

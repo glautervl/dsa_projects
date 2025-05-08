@@ -1,5 +1,5 @@
 // O(1) - Constant Time: The operation always takes the same amount of time, regardless of input size.
-function constantTimeExample(n: number[]): number {
+function constantOperation(n: number[]): number {
     return n[0];
 }
 
@@ -127,13 +127,13 @@ export default function runBigOExamples() {
     const fibonacciNumber = 10;
     const target = 5;
 
-    console.log("TypeScript - O(1) - Constant Time:", constantTimeExample(testArr));
-    console.log("TypeScript - O(log N) - Logarithmic Time:", binarySEarch(testArr, target));
-    console.log("TypeScript - O(N) - Linear Time:", linearSum(testArr));
-    console.log("TypeScript - O(N log N) - Linearithmic Time:", mergeSort(unsortedArr));
-    console.log("TypeScript - O(N^2) - Quadratic Time:", sum_char_codes_n2(testStr));
-    console.log("TypeScript - O(N^3) - Cubic Time:", sum_char_codes_n3(testStr));
-    console.log("TypeScript - O(2^N) - Exponential Time:", findFibonacciNumber(fibonacciNumber));
-    console.log("TypeScript - O(N!) - Factorial Time:", getNumberOfPermutations(numberOfPermutations));
-    console.log("TypeScript - O(N!) - Factorial Time:", generatePermutations(permutations));
+    console.log("TypeScript - Big O - O(1) - Contant Time - Constant Operation:", constantOperation(testArr));
+    console.log("TypeScript - Big O - O(logN) - Logarithmic Time - Binary Search:", binarySEarch(testArr, target));
+    console.log("TypeScript - Big O - O(N) - Linear Time - Linear Sum:", linearSum(testArr));
+    console.log("TypeScript - Big O - O(NlogN) - Log Linear Time - Merge Sort:", mergeSort(unsortedArr));
+    console.log("TypeScript - Big O - O(N^2) - Quadratic Time - Sum Char Codes N²:", sum_char_codes_n2(testStr));
+    console.log("TypeScript - Big O - O(N^3) - Cubic Time - Sum Char Codes N³:", sum_char_codes_n3(testStr));
+    console.log("TypeScript - Big O - O(2^N) - Exponential Time - Fibonacci Number:", findFibonacciNumber(fibonacciNumber));
+    console.log("TypeScript - Big O - O(N!) - Factorial Time - Number of Permutations:", getNumberOfPermutations(numberOfPermutations));
+    console.log("TypeScript - Big O - O(N!) - Factorial Time - GeneratePermutations:", generatePermutations(permutations));
 }
